@@ -35,9 +35,17 @@ document.getElementsByClassName("premium")[0].addEventListener("click", function
 document.getElementById("color_mode").addEventListener("click", function(){
     let checkbox = document.getElementById("color_mode");
     if (checkbox.checked == false){
-        console.log("true");
+        document.getElementsByClassName("pr-title")[0].innerHTML = "Monthly price";
+        document.getElementsByClassName("pr-mob")[0].innerHTML = "Rs 100"
+        document.getElementsByClassName("pr-basic")[0].innerHTML = "Rs 200"
+        document.getElementsByClassName("pr-standard")[0].innerHTML = "Rs 500"
+        document.getElementsByClassName("pr-premium")[0].innerHTML = "Rs 700"
     }
     else{
-        console.log("asd")
+        document.getElementsByClassName("pr-title")[0].innerHTML = "Yearly price";
+        document.getElementsByClassName("pr-mob")[0].innerHTML = "Rs 1000"
+        document.getElementsByClassName("pr-basic")[0].innerHTML = "Rs 2000"
+        document.getElementsByClassName("pr-standard")[0].innerHTML = "Rs 5000"
+        document.getElementsByClassName("pr-premium")[0].innerHTML = "Rs 7000"
     }
 })
