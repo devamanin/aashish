@@ -49,3 +49,4 @@ document.getElementById("color_mode").addEventListener("click", function(){
         document.getElementsByClassName("pr-premium")[0].innerHTML = "Rs 7000"
     }
 })
+
